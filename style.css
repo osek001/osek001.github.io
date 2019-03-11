@@ -1,0 +1,114 @@
+:root{
+    --szary: linear-gradient(to right, rgb(66, 66, 66),rgb(165, 165, 165));
+}
+body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 20px, 30px;
+    height: 100px;
+    color: white;
+    background: var(--szary);
+}
+.item{
+    justify-self: center;
+    margin: auto;
+}
+.titleBar{
+    color:white;
+    height: 100vh;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("paper-bag.jpg") no-repeat right top fixed;
+    background-size: 100vw;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+.titleBar>h1{
+    margin-top: 25vh;
+    font-family: 'Lobster', cursive;
+    font-size: 300px;
+    margin-bottom: 0;
+}
+.titleBar p{
+    font-size: 30px;
+}
+#navBar{
+    grid-area: navBar;
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    background: rgba(56, 56, 56, 0.24);
+    height: 5vh;
+    width: 100%;
+    align-content: center;
+    position: fixed;
+    transition: top 0.4s;
+    top:0;
+}
+#navBar .item:first-child{
+    font-size: 35px;
+    margin-left: 5vw;
+}
+#oNas{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 40% 60%;
+}
+#oNas img{
+    width: 100%;
+    margin: auto;
+}
+
+#naszaOferta{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    justify-items: center;
+}
+.titles{
+    margin: 0;
+    display: grid;
+    justify-items: center;
+    grid-column: 1 / span 2;
+}
+.content{
+    padding: 0 2vw ;
+}
+.produkt{
+    display:grid;
+    font-size: 100px;
+    width:50vw;
+    justify-items: center;
+}
+#naszaOferta a{
+    text-decoration: none;
+    color: black;
+}
+.item>a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.bigTitle{
+    font-family: 'Lobster', cursive;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .container {
+  padding-top: 50px;
+}
